@@ -61,7 +61,7 @@ const About = () => {
               Computer Science Student & Cybersecurity Enthusiast
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4 sm:mb-6">
-              I'm a passionat Computer Science student at Lovely Professional University with a focus on cybersecurity,
+              I'm a passionate Computer Science student at Lovely Professional University with a focus on cybersecurity,
               ethical hacking, and programming. I'm dedicated to understanding and mitigating digital threats.
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-6 sm:mb-8">
