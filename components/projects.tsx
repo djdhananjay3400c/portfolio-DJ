@@ -42,20 +42,6 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "WebApp Vulnerability Assessment Lab",
-      description: "Performed SQL injection attacks on vulnerable web applications to extract sensitive data.",
-      image: "/placeholder-logo.png?height=200&width=400",
-      tags: ["Kali Linux", "SQLMap", "WAFW00F"],
-      github: "https://github.com/djdhananjay3400c/WebApp_Vulnerability_Assessment_Lab",
-      demo: "#",
-      period: "Jul 2024 - Aug 2024",
-      details: [
-        "Performed SQL injection attacks on vulnerable web applications to extract sensitive data.",
-        "Detected and bypassed Web Application Firewalls (WAFs).",
-        "Proposed effective mitigation strategies like input validation and prepared statements to prevent future exploitation.",
-      ],
-    },
-    {
       title: "BlueWatch Lab",
       description:
         "Built a simulated enterprise environment using Active Directory to practice real-world attack detection.",
@@ -68,6 +54,20 @@ const Projects = () => {
         "Built a simulated enterprise environment using Active Directory to practice real-world attack detection.",
         "Integrated Splunk SIEM for log ingestion and analysis.",
         "Monitored domain activities and detected threats like brute-force attempts and unauthorized access using security telemetry.",
+      ],
+    },
+    {
+      title: "WebApp Vulnerability Assessment Lab",
+      description: "Performed SQL injection attacks on vulnerable web applications to extract sensitive data.",
+      image: "/placeholder-logo.png?height=200&width=400",
+      tags: ["Kali Linux", "SQLMap", "WAFW00F"],
+      github: "https://github.com/djdhananjay3400c/WebApp_Vulnerability_Assessment_Lab",
+      demo: "#",
+      period: "Jul 2024 - Aug 2024",
+      details: [
+        "Performed SQL injection attacks on vulnerable web applications to extract sensitive data.",
+        "Detected and bypassed Web Application Firewalls (WAFs).",
+        "Proposed effective mitigation strategies like input validation and prepared statements to prevent future exploitation.",
       ],
     },
     {
