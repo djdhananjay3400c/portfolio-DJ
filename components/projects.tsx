@@ -212,6 +212,7 @@ const Projects = () => {
                     Code
                   </Button>
                 </a>
+                <a href={project.demo} target="_blank" rel="noopener noreferrer" className="inline-block">
                 <Button
                   size="sm"
                   className="bg-primary text-white dark:text-black hover:bg-primary/80 text-xs sm:text-sm transition-all duration-300"
@@ -219,6 +220,7 @@ const Projects = () => {
                   <ExternalLink className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                   Live Demo
                 </Button>
+                </a>
               </CardFooter>
             </Card>
           ))}

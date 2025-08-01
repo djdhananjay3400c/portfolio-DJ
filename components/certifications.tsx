@@ -212,7 +212,7 @@ const Certifications = () => {
         <div className="mt-8 md:mt-12 text-center reveal">
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
             Continuously expanding my knowledge through professional certifications and specialized training in
-            cybersecurity, networking, and programming technologies.
+            cybersecurity, networking, WebDveloping and programming technologies.
           </p>
         </div>
       </div>

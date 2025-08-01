@@ -65,7 +65,7 @@ const DownloadResume = () => {
 
             {/* Specialized Resume Link */}
             <a
-              href="https://drive.google.com/file/d/1fmJFwCmmACl1Z_r_ftu4gAqjdRt00_7I/view?usp=sharing"
+              href="https://drive.google.com/file/d/1NMjlU6IY2CeftIKxOGPZCW79hTO1_JbO/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

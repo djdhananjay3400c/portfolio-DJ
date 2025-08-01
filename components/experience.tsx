@@ -40,7 +40,7 @@ const Experience = () => {
     {
       title: "Live Project (Outlier)",
       company: "",
-      period: "December 2024 - Present",
+      period: "December 2024 - July 2025",
       type: "project",
       icon: <Cpu className="h-6 w-6 text-primary" />,
       description: [

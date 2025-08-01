@@ -47,52 +47,74 @@ const Skills = () => {
   }, [])
 
   const skillCategories = [
-    {
-      name: "Programming Languages",
-      icon: <Code className="h-5 w-5 sm:h-6 sm:w-6 text-primary dark:text-primary" />,
-      skills: [
-        { name: "Python", level: 90 },
-        { name: "C++", level: 85 },
-        { name: "Java", level: 80 },
-        { name: "SQL", level: 85 },
-        { name: "C", level: 80 },
-        { name: "HTML/CSS", level: 75 },
-      ],
-    },
-    {
-      name: "Frameworks & Tools",
-      icon: <Terminal className="h-5 w-5 sm:h-6 sm:w-6 text-secondary dark:text-secondary" />,
-      skills: [
-        { name: "Kali Linux", level: 90 },
-        { name: "Wireshark", level: 85 },
-        { name: "TcpDump", level: 80 },
-        { name: "Nmap", level: 85 },
-        { name: "VMware", level: 80 },
-        { name: "Windows Server", level: 75 },
-      ],
-    },
-    {
-      name: "Cybersecurity",
-      icon: <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6 text-accent dark:text-accent" />,
-      skills: [
-        { name: "Penetration Testing", level: 85 },
-        { name: "Vulnerability Assessment", level: 90 },
-        { name: "Network Security", level: 85 },
-        { name: "Ethical Hacking", level: 80 },
-        { name: "Digital Forensics", level: 75 },
-      ],
-    },
-    {
+  {
+    name: "Programming Languages",
+    icon: <Code className="h-5 w-5 sm:h-6 sm:w-6 text-primary dark:text-primary" />,
+    skills: [
+      { name: "Python", level: 90 },
+      { name: "C++", level: 85 },
+      { name: "Java", level: 60 },
+      { name: "SQL", level: 60 },
+      { name: "JavaScript", level: 60 },
+    ],
+  },
+  {
+    name: "Cyber Frameworks & Tools",
+    icon: <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6 text-secondary dark:text-secondary" />,
+    skills: [
+      { name: "Kali Linux", level: 90 },
+      { name: "Wireshark", level: 85 },
+      { name: "TcpDump", level: 80 },
+      { name: "Nmap", level: 85 },
+      { name: "VMware", level: 80 },
+      { name: "Windows Server", level: 75 },
+    ],
+  },
+  {
+    name: "Frameworks & Tools",
+    icon: <Terminal className="h-5 w-5 sm:h-6 sm:w-6 text-secondary dark:text-secondary" />,
+    skills: [
+      { name: "React", level: 80 },
+      { name: "Node.js", level: 55 },
+      { name: "MongoDB", level: 65 },
+      { name: "Express.js", level: 60 },
+      { name: "Tailwind CSS", level: 70 },
+      { name: "Vite", level: 75 },
+    ],
+  },
+  {
+    name: "Cybersecurity",
+    icon: <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6 text-accent dark:text-accent" />,
+    skills: [
+      { name: "Penetration Testing", level: 85 },
+      { name: "Vulnerability Assessment", level: 90 },
+      { name: "Network Security", level: 85 },
+      { name: "Ethical Hacking", level: 80 },
+      { name: "Digital Forensics", level: 75 },
+    ],
+  },
+  {
+    name: "Full-Stack Development",
+    icon: <Database className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600 dark:text-white" />,
+    skills: [
+      { name: "REST API Design", level: 65 },
+      { name: "JWT & Auth", level: 70 },
+      { name: "Project Structuring", level: 85 },
+      { name: "Debugging & Testing", level: 90 },
+    ],
+  },
+  {
       name: "Other Skills",
       icon: <Database className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600 dark:text-white" />,
       skills: [
-        { name: "Data Structures", level: 85 },
-        { name: "Algorithms", level: 80 },
-        { name: "Problem-Solving", level: 90 },
-        { name: "Scripting", level: 85 },
+        { name: "Data Structures", level: 75 },
+        { name: "Algorithms", level: 60 },
+        { name: "Problem-Solving", level: 70 },
+        { name: "Scripting", level: 65 },
       ],
     },
-  ]
+]
+
 
   return (
     <section id="skills" ref={sectionRef} className="section cyberpunk-grid py-16 md:py-24">
@@ -142,7 +164,7 @@ const Skills = () => {
           </div>
           <div className="skill-card flex flex-col items-center p-3 sm:p-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg border border-gray-200 dark:border-gray-700">
             <Server className="h-8 w-8 sm:h-10 sm:w-10 text-primary dark:text-primary mb-2 group-hover:scale-110 transition-transform duration-300" />
-            <span className="text-center text-sm sm:text-base">Server Management</span>
+            <span className="text-center text-sm sm:text-base">Server & Backend</span>
           </div>
           <div className="skill-card flex flex-col items-center p-3 sm:p-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg border border-gray-200 dark:border-gray-700">
             <Globe className="h-8 w-8 sm:h-10 sm:w-10 text-primary dark:text-primary mb-2 group-hover:scale-110 transition-transform duration-300" />

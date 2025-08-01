@@ -64,7 +64,7 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} Dhananjay Singh. All rights reserved.
             </p>
             <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-500">
-              Cybersecurity | Networking | Programming
+              Cybersecurity | Networking | Programming | FullStack 
             </p>
           </div>
         </div>

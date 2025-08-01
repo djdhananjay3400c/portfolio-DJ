@@ -2,14 +2,6 @@
 
 import { useEffect, useRef, useState } from "react"
 import { Download, GraduationCap, Briefcase, X } from "lucide-react"
-
-// Import your UI components here based on your website's component library
-// If you're not using shadcn/ui, replace these imports with your own components
-// For example:
-// import Button from "@/components/Button"
-// import Card from "@/components/Card"
-
-// Using shadcn/ui components as default
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {
@@ -20,10 +12,9 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
 
-// Configuration variables - easy to modify
 const RESUME_LINKS = {
   generalized: "https://drive.google.com/file/d/15x_kKoXLdPPZDGwxIQQhZ4RM8JLUXZXP/view?usp=sharing",
-  specialized: "https://drive.google.com/file/d/1fmJFwCmmACl1Z_r_ftu4gAqjdRt00_7I/view?usp=sharing"
+  specialized: "https://drive.google.com/file/d/1NMjlU6IY2CeftIKxOGPZCW79hTO1_JbO/view?usp=sharing"
 };
 
 const POPUP_TEXT = {
@@ -33,7 +24,6 @@ const POPUP_TEXT = {
   footer: "Choose the resume version that best fits your needs"
 };
 
-// You can customize these class names to match your website's theme
 const THEME_CLASSES = {
   primaryButton: "bg-primary hover:bg-primary/80 text-white dark:text-black",
   cardBg: "bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700",
@@ -43,7 +33,7 @@ const THEME_CLASSES = {
 };
 
 const Resume = () => {
-  const sectionRef = useRef(null)
+  const sectionRef = useRef<HTMLElement | null>(null)
   const [isDialogOpen, setIsDialogOpen] = useState(false)
 
   useEffect(() => {
@@ -96,7 +86,7 @@ const Resume = () => {
   const experience = [
     {
       position: "Live Project (Outlier)",
-      company: "",
+      company: "Outlier.ai",
       period: "December 2024 - Present",
       description:
         "Trained an AI model to detect outliers based on patterns in source code, with a focus on C++, Java, and Python. Refined algorithms to accurately identify anomalies and tuned datasets to boost model precision.",
@@ -176,10 +166,9 @@ const Resume = () => {
         </div>
       </div>
 
-      {/* Resume Download Modal - Start */}
-      {/* You can replace AlertDialog with your own modal component if needed */}
+      {/* Resume Download Modal */}
       <AlertDialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <AlertDialogContent className={`${THEME_CLASSES.cardBg} max-w-md`}>
+        <AlertDialogContent className={`${THEME_CLASSES.cardBg} w-full max-w-sm sm:max-w-md`}>
           <AlertDialogHeader>
             <AlertDialogTitle className="text-center text-lg font-bold flex justify-between items-center">
               <span>{POPUP_TEXT.title}</span>
@@ -193,33 +182,26 @@ const Resume = () => {
             </AlertDialogTitle>
           </AlertDialogHeader>
           
-          {/* Resume Options */}
           <div className="grid grid-cols-1 gap-4 my-4">
-            {/* Generalized Resume Link */}
             <a
               href={RESUME_LINKS.generalized}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => setIsDialogOpen(false)}
             >
-              <Button 
-                className={`w-full ${THEME_CLASSES.primaryButton}`}
-                onClick={() => setIsDialogOpen(false)}
-              >
+              <Button className={`w-full ${THEME_CLASSES.primaryButton}`}>
                 <Download className="mr-2 h-4 w-4" />
                 {POPUP_TEXT.generalizedLabel}
               </Button>
             </a>
             
-            {/* Specialized Resume Link */}
             <a
               href={RESUME_LINKS.specialized}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => setIsDialogOpen(false)}
             >
-              <Button 
-                className={`w-full ${THEME_CLASSES.primaryButton}`}
-                onClick={() => setIsDialogOpen(false)}
-              >
+              <Button className={`w-full ${THEME_CLASSES.primaryButton}`}>
                 <Download className="mr-2 h-4 w-4" />
                 {POPUP_TEXT.specializedLabel}
               </Button>
@@ -231,7 +213,6 @@ const Resume = () => {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-      {/* Resume Download Modal - End */}
     </section>
   )
 }
