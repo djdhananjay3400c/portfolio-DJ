@@ -42,19 +42,32 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "WebApp Vulnerability Assessment Lab",
-      description: "Performed SQL injection attacks on vulnerable web applications to extract sensitive data.",
-      image: "/placeholder-logo.png?height=200&width=400",
-      tags: ["Kali Linux", "SQLMap", "WAFW00F"],
-      github: "https://github.com/djdhananjay3400c/WebApp_Vulnerability_Assessment_Lab",
-      demo: "#",
-      period: "Jul 2024 - Aug 2024",
-      details: [
-        "Performed SQL injection attacks on vulnerable web applications to extract sensitive data.",
-        "Detected and bypassed Web Application Firewalls (WAFs).",
-        "Proposed effective mitigation strategies like input validation and prepared statements to prevent future exploitation.",
-      ],
-    },
+  title: "FormCraft",
+  description:
+    "A modern, full-stack resume builder application that lets users create, edit, and export professional resumes with ease and customization.",
+  image: "/formcraft-logo.png?height=200&width=400",
+  tags: [
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Tailwind CSS",
+    "JWT",
+    "Vite",
+    "Email OTP"
+  ],
+  github: "https://github.com/djdhananjay3400c/FormCraft",
+  demo: "https://formcraftfrom.onrender.com/", // add your Vercel or live link once deployed
+  period: "June 2025 – July 2025",
+  details: [
+    "Developed a full-stack MERN resume builder with real-time live preview and PDF export support.",
+    "Implemented authentication using JWT and OTP-based email verification for secure signup.",
+    "Enabled customizable resume templates with live theme switching, dynamic preview rendering, and print-ready A4 layouts.",
+    "Built backend REST APIs for user management, resume CRUD operations, and OTP verification using Nodemailer.",
+    "Used Vite for blazing-fast frontend builds and Tailwind CSS for responsive UI design.",
+    "Deployed using Vercel (frontend) and Render (backend), integrated with GitHub CI for auto-updates."
+  ],
+},
     {
       title: "BlueWatch Lab",
       description:
@@ -68,6 +81,20 @@ const Projects = () => {
         "Built a simulated enterprise environment using Active Directory to practice real-world attack detection.",
         "Integrated Splunk SIEM for log ingestion and analysis.",
         "Monitored domain activities and detected threats like brute-force attempts and unauthorized access using security telemetry.",
+      ],
+    },
+    {
+      title: "WebApp Vulnerability Assessment Lab",
+      description: "Performed SQL injection attacks on vulnerable web applications to extract sensitive data.",
+      image: "/placeholder-logo.png?height=200&width=400",
+      tags: ["Kali Linux", "SQLMap", "WAFW00F"],
+      github: "https://github.com/djdhananjay3400c/WebApp_Vulnerability_Assessment_Lab",
+      demo: "#",
+      period: "Jul 2024 - Aug 2024",
+      details: [
+        "Performed SQL injection attacks on vulnerable web applications to extract sensitive data.",
+        "Detected and bypassed Web Application Firewalls (WAFs).",
+        "Proposed effective mitigation strategies like input validation and prepared statements to prevent future exploitation.",
       ],
     },
     {
