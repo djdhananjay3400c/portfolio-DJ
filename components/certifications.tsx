@@ -45,6 +45,13 @@ const Certifications = () => {
 
   const certifications = [
     {
+      title: "Mern Stack",
+      issuer: "CipherSchools",
+      date: "July 2025",
+      description: "Comprehensive certification covering MERN concepts, web architectures, and implementations.",
+      url: "https://drive.google.com/file/d/146_Noc6UKYlt28tTaSuPqb19Wch6zBdW/view?usp=sharing",
+    },
+    {
       title: "Cloud Computing",
       issuer: "NPTEL",
       date: "October 2024",
