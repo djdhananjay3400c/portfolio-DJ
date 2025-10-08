@@ -42,6 +42,34 @@ const Projects = () => {
 
   const projects = [
     {
+  title: "PenguChirp",
+  description:
+    "A full-stack, real-time chat application with robust user authentication and live messaging capabilities.",
+  image: "/penguChirp-logo.png?height=200&width=400",
+  tags: [
+    "React",
+    "Vite",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Socket.IO",
+    "Tailwind CSS",
+    "JWT",
+    "Cloudinary"
+  ],
+  github: "https://github.com/djdhananjay3400c/PenguChirp",
+  demo: "https://penguchirp.vercel.app/#/",
+  period: "Sept 2025 – Present",
+  details: [
+    "Developed a full-stack MERN chat application featuring one-to-one real-time messaging using Socket.IO.",
+    "Implemented secure JWT-based authentication for user signup, login, and profile management.",
+    "Integrated Cloudinary for profile picture uploads, enabling users to customize their profiles.",
+    "Engineered REST APIs for user management and chat history, with live presence tracking and unseen message indicators.",
+    "Utilized React Context for centralized state management (AuthContext & ChatContext) to ensure a modular and scalable frontend.",
+    "Deployed the project with a separate frontend (Vercel) and backend (Render) for a robust production environment."
+  ],
+},
+    {
   title: "FormCraft",
   description:
     "A modern, full-stack resume builder application that lets users create, edit, and export professional resumes with ease and customization.",
